@@ -1,0 +1,203 @@
+body{
+  background-color: #e4f3f8;
+}
+
+.arrow1{
+  width: 200px;
+  position: absolute;
+  top: 60%;
+  left: 100px;
+}
+.arrow2{
+  width: 200px;
+  position: absolute;
+  top: 60%;
+  right: 100px;
+}
+
+
+.social1, .social2{
+  height: 70px;
+  position: fixed;
+  top: 30px;
+  left: 50px;
+}
+.social1{
+  border-radius: 10%;
+}
+.social2{
+  margin-left: 90px;
+}
+.social1:hover, .social2:hover{
+  height: 80px;
+  top: 25px;
+  left: 45px;
+}
+
+
+.aboutheader{
+  width: 90%;
+  margin-left: 6%;
+  margin-top: 300px;
+  animation: shake 4s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  animation-iteration-count:infinite;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+.about1, .about2, .about3{
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 15%;
+}
+.about3{
+  margin-bottom: 300px;
+  animation: shake 4s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  animation-iteration-count:infinite;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+
+a{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 23px;
+  color: black;
+	overflow: hidden;
+	z-index: 1000;
+  text-decoration: none;
+  position: relative;
+}
+.namelogo{
+  position: absolute;
+  height: 300px;
+  margin-top: 100px;
+  margin-left: 15%;
+  animation: shake 4s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  animation-iteration-count:infinite;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(3px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(5px, 0, 0);
+  }
+}
+.portfolio{
+  margin-left: 32%;
+  margin-top: -50px;
+  position: absolute;
+}
+.portfolio:hover{
+  color: white;
+}
+.projects{
+  margin-left: 32%;
+  margin-top: -50px;
+  position: absolute;
+}
+.projects:hover{
+  color: white;
+}
+
+.logo{
+  z-index: -30;
+  height: 600px;
+  margin-top: 70px;
+  margin-left: 25%;
+}
+.flex{
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  position: absolute;
+  width: 80%;
+  margin-top: 400px;
+  line-height: 50px;
+}
+.fill{
+  position: relative;
+  margin-left: 31%;
+	background-image: linear-gradient(to right, #d12858 , #ffd376 );
+	background-size: 150% 150%;
+	height: 50px;
+	width: 230px;
+	border-radius: 5px;
+	z-index: -10;
+}
+.fill2{
+  position: relative;
+  margin-top: 70px;
+  margin-left: 31%;
+	background-image: linear-gradient(to right, #d12858 , #ffd376 );
+	background-size: 150% 150%;
+	height: 50px;
+	width: 200px;
+	border-radius: 5px;
+	z-index: -10;
+}
+
+.container-one:hover .fill{
+	-webkit-animation: gradient 1.5s ease infinite;
+	-moz-animation: gradient 1.5s ease infinite;
+	animation: gradient 1.5s ease infinite;
+}
+.container-two:hover .fill2{
+	-webkit-animation: gradient 1.5s ease infinite;
+	-moz-animation: gradient 1.5s ease infinite;
+	animation: gradient 1.5s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@-moz-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
